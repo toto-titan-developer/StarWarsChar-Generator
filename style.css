@@ -1,0 +1,94 @@
+@font-face {
+    font-family: 'StarWarsFont';
+    font-style: normal;
+    font-weight: normal;
+    src: local('StarWarsFont'), url('./Fonts/Starjedi.ttf') format('truetype');
+}
+@font-face {
+    font-family: 'StarWarsLogo';
+    font-style: normal;
+    font-weight: normal;
+    src: local('StarWarsLogo'), url('./Fonts/Stjldbl1.ttf') format('truetype');
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-family: 'StarWarsFont';
+    font-weight: 300;
+    font-size: 1em;
+    letter-spacing: 2px;
+    background-image: url('./Images/galaxy_img_1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgb(255, 255, 255);
+}
+
+h1 {
+    font-family: 'StarWarsLogo';
+    font-weight: 600;
+    font-size: 3.5em;
+    background: linear-gradient(0deg, rgb(199, 241, 8) 0%, rgb(40, 43, 7) 50%, rgb(199, 241, 8) 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+h3 {
+    font-size: 2em;
+    margin: 0px;
+    text-decoration: underline;
+}
+h4 {
+    font-size: 0.7em;
+    margin: 0px;
+    color: yellow;
+}
+h5 {
+    font-size: 1.3em;
+    margin: 0px;
+}
+
+li {
+    list-style: none;
+    text-align: center;
+}
+
+button {
+    font-family: 'StarWarsFont';
+    background-color: black;
+    color: white;
+    border: 2px dotted yellow;
+    border-radius: 75px;
+    height: 75px;
+    width: 75px;
+    outline: none;
+
+}
+button:hover {
+    background-color: yellow;
+    border-color: black;
+    color: black;
+}
+
+.char-block {
+    margin: 50px;
+    padding: 100px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 200px;
+    border: 1px solid yellow;
+}
+
+footer {
+    position: fixed;
+    bottom: 0px;
+    background-color: black;
+    color: grey;
+    width: 100vw;
+    font-size: 0.7em;
+    text-align: center;
+}
